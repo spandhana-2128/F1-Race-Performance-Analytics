@@ -223,21 +223,3 @@ Open the notebooks in Jupyter or VS Code and run them in order:
 
 ---
 
-## Future Improvements
-
-Potential extensions include:
-
-- Adding the remaining 2026 races
-- Including qualifying performance
-- Incorporating weather and track conditions
-- Adding pit-stop analysis
-- Expanding team-level strategy analysis
-- Adding additional Power BI pages for deeper race-event analysis
-
----
-
-## Author
-
-**Spandhana Shashidharan**
-
-Data Analytics | Python | SQL | Power BI
