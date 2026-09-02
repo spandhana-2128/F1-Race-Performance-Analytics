@@ -42,8 +42,6 @@ Feature Engineering
        ↓
 Python / Pandas Analysis
        ↓
-SQL Analytics
-       ↓
 Performance & Strategy Metrics
        ↓
 Power BI Dashboard
@@ -77,17 +75,6 @@ Power BI Dashboard
 - Driver stint strategies
 - Comparison of tyre usage across races
 
-### SQL Analysis
-
-SQL queries are used to perform structured analysis of:
-
-- Driver performance
-- Race pace
-- Tyre usage
-- Stint performance
-- Race-level comparisons
-
----
 
 ## Power BI Dashboard
 
@@ -142,9 +129,6 @@ F1-Race-Performance-Analytics/
 ├── notebooks/
 │   ├── 01_data_exploration_all_races.ipynb
 │   └── 02_performance_analysis.ipynb
-│
-├── sql/
-│   └── analysis.sql
 │
 ├── src/
 │   ├── data_loader.py
