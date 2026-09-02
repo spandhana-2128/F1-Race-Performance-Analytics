@@ -1,39 +1,39 @@
-#F1 Race Performance & Strategy Analytics
+# F1 Race Performance & Strategy Analytics
 
 A data analytics project analyzing Formula 1 race performance, driver pace, tyre strategy, stint performance, and lap-time consistency across three 2026 Grand Prix.
 
 The project combines Python/Pandas, SQL, and Power BI to transform raw F1 session data into performance metrics and an interactive analytical dashboard.
 
-##Project Overview
+---
+
+## Project Overview
 
 Formula 1 performance is influenced by much more than finishing position. Lap pace, tyre compound, tyre life, stint length, race conditions, and consistency all provide additional insight into how drivers and teams perform.
 
 This project analyzes these factors across:
 
--🇦🇺 Australian Grand Prix
-
--🇨🇳 Chinese Grand Prix
-
--🇯🇵 Japanese Grand Prix
+- 🇦🇺 Australian Grand Prix
+- 🇨🇳 Chinese Grand Prix
+- 🇯🇵 Japanese Grand Prix
 
 The analysis focuses on identifying differences in driver performance, race pace, tyre usage, stint strategy, and consistency across races.
 
-##Tech Stack
+---
 
-Python — Data processing and analysis
+## Tech Stack
 
-Pandas / NumPy — Data cleaning and transformation
+- **Python** — Data processing and analysis
+- **Pandas / NumPy** — Data cleaning and transformation
+- **SQL** — Race and driver-level analytical queries
+- **Power BI** — Interactive dashboard and visualization
+- **DAX** — Calculated performance metrics
+- **FastF1 / F1 session data** — Formula 1 race data
 
-SQL — Race and driver-level analytical queries
+---
 
-Power BI — Interactive dashboard and visualization
+## Project Workflow
 
-DAX — Calculated performance metrics
-
-FastF1 / F1 session data — Formula 1 race data
-
-##Project Workflow
-
+```text
 F1 Session Data
        ↓
 Data Cleaning & Transformation
@@ -47,109 +47,89 @@ SQL Analytics
 Performance & Strategy Metrics
        ↓
 Power BI Dashboard
+```
 
-##Analysis Performed
+---
 
-1)Driver Performance
+## Analysis Performed
 
-Average representative lap time
+### Driver Performance
 
-Best lap time
+- Average representative lap time
+- Best lap time
+- Driver pace comparison
+- Race-level performance comparison
+- Finishing position
 
-Driver pace comparison
+### Race Performance
 
-Race-level performance comparison
+- Lap-time consistency
+- Lap-time standard deviation
+- Driver performance across different circuits
+- Race-level pace comparison
 
-Finishing position
+### Tyre & Strategy Analysis
 
-2)Race Performance
+- Tyre compound performance
+- Average tyre pace
+- Tyre life analysis
+- Maximum stint length
+- Driver stint strategies
+- Comparison of tyre usage across races
 
-Lap-time consistency
-
-Lap-time standard deviation
-
-Driver performance across different circuits
-
-Race-level pace comparison
-
-3)Tyre & Strategy Analysis
-
-Tyre compound performance
-
-Average tyre pace
-
-Tyre life analysis
-
-Maximum stint length
-
-Driver stint strategies
-
-Comparison of tyre usage across races
-
-4)SQL Analysis
+### SQL Analysis
 
 SQL queries are used to perform structured analysis of:
 
-Driver performance
+- Driver performance
+- Race pace
+- Tyre usage
+- Stint performance
+- Race-level comparisons
 
-Race pace
+---
 
-Tyre usage
-
-Stint performance
-
-Race-level comparisons
-
-##Power BI Dashboard
+## Power BI Dashboard
 
 The project includes an interactive Power BI dashboard with three analytical pages.
 
-1. Overview
+### 1. Overview
 
 Provides a high-level view of:
 
-Representative average lap time
+- Representative average lap time
+- Best lap time
+- Total laps
+- Number of drivers
+- Driver pace
+- Race and driver comparisons
 
-Best lap time
-
-Total laps
-
-Number of drivers
-
-Driver pace
-
-Race and driver comparisons
-
-2. Tyre & Strategy Analysis
+### 2. Tyre & Strategy Analysis
 
 Explores:
 
-Maximum stint length by driver
+- Maximum stint length by driver
+- Maximum stint length by tyre compound
+- Average tyre pace
+- Tyre-life performance
+- Race-level strategy differences
 
-Maximum stint length by tyre compound
-
-Average tyre pace
-
-Tyre-life performance
-
-Race-level strategy differences
-
-3. Race Performance
+### 3. Race Performance
 
 Focuses on:
 
-Driver finishing positions
-
-Representative average lap time
-
-Lap-time consistency
-
-Detailed race and driver comparisons
+- Driver finishing positions
+- Representative average lap time
+- Lap-time consistency
+- Detailed race and driver comparisons
 
 The dashboard includes interactive race filtering and conditional formatting to make performance differences easier to identify.
 
-##Project Structure
+---
 
+## Project Structure
+
+```text
 F1-Race-Performance-Analytics/
 │
 ├── dashboard/
@@ -174,8 +154,11 @@ F1-Race-Performance-Analytics/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
-##Key Takeaways
+---
+
+## Key Takeaways
 
 The analysis demonstrates that race performance cannot be evaluated using finishing position alone.
 
@@ -183,44 +166,78 @@ Driver pace, tyre usage, stint length, and lap-time consistency provide addition
 
 The Power BI dashboard allows these metrics to be explored interactively across the three races.
 
-##Data
+---
+
+## Data
 
 The project uses Formula 1 session data containing lap timing, driver, team, tyre, stint, and race information.
 
 Raw race data is excluded from the repository where appropriate. Processed analytical outputs are included to support reproducibility of the analysis.
 
-##Reproducibility
+---
 
-1. Clone the repository
+## Reproducibility
 
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/spandhana-2128/F1-Race-Performance-Analytics.git
 cd F1-Race-Performance-Analytics
+```
 
-2. Create a virtual environment
+### 2. Create a virtual environment
 
+```bash
 python -m venv venv
+```
 
 Activate it on Windows:
 
+```bash
 venv\Scripts\activate
+```
 
-3. Install dependencies
+### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the notebooks
+### 4. Run the notebooks
 
 Open the notebooks in Jupyter or VS Code and run them in order:
 
+```text
 01_data_exploration_all_races.ipynb
 02_performance_analysis.ipynb
+```
 
-##Limitations
+---
 
-The analysis covers three 2026 Grand Prix rather than the complete season.
+## Limitations
 
-Lap times vary naturally between circuits, so direct cross-circuit lap-time comparisons should be interpreted with race context.
+- The analysis covers three 2026 Grand Prix rather than the complete season.
+- Lap times vary naturally between circuits, so direct cross-circuit lap-time comparisons should be interpreted with race context.
+- Race conditions, safety cars, traffic, pit stops, and other race events can affect lap times.
+- The project focuses on descriptive and analytical insights rather than attempting to predict race outcomes.
 
-Race conditions, safety cars, traffic, pit stops, and other race events can affect lap times.
+---
 
-The project focuses on descriptive and analytical insights rather than attempting to predict race outcomes.
+## Future Improvements
+
+Potential extensions include:
+
+- Adding the remaining 2026 races
+- Including qualifying performance
+- Incorporating weather and track conditions
+- Adding pit-stop analysis
+- Expanding team-level strategy analysis
+- Adding additional Power BI pages for deeper race-event analysis
+
+---
+
+## Author
+
+**Spandhana Shashidharan**
+
+Data Analytics | Python | SQL | Power BI
